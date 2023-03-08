@@ -1,0 +1,56 @@
+﻿<Window x:Class="CRUD_Academy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUD_Academy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid Name="dataGridView1" Grid.Row="1"></DataGrid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Click="Add_Click" Grid.Column="0">ADD</Button>
+            <Button Grid.Column="1" Click="Update_Click">UPDATE</Button>
+            <Button Grid.Column="2" Click="Delete_Click">DELETE</Button>
+        </Grid>
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+            <Label Grid.Row="0" Grid.Column="0">Name</Label>
+            <Label Grid.Row="1" Grid.Column="0">Surname</Label>
+            <TextBox x:Name="Name_textbox" Grid.Row="0" Grid.Column="1"  AutomationProperties.HelpText="Name"></TextBox>
+            <TextBox x:Name="Surname_textbox" Grid.Row="1" Grid.Column="1"  AutomationProperties.HelpText="Name"></TextBox>
+        </Grid>
+        
+        
+
+      
+
+      
+
+    </Grid>
+</Window>
